@@ -8,6 +8,7 @@ const migration = () => {};
 
 const connect = async () => {
     await mongoose.connect(MONGO_URI);
+    _errorHandler()
 };
 
 module.exports = connect;
